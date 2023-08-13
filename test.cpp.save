@@ -1,0 +1,9 @@
+#include <taglib/fileref.h>
+#include <taglib/tag.h>
+
+int main()
+{
+	TagLib::FileRef f("Latex Solar Beef.mp3");
+	TagLib::String artist = f.tag()->artist();
+	return 0;
+}
